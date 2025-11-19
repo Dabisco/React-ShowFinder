@@ -6,7 +6,7 @@ import cors from "cors";
 import axios from "axios";
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = 3000;
 
 interface PageQuery {
   page: string;
@@ -28,9 +28,9 @@ interface Error {
 }
 
 //middleware
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors());
 
 app.get(
   "/api/shows/:showId",
