@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    /* Basic Settings */
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+
+    /* React */
+    "jsx": "react-jsx",
+
+    /* Path & Module Resolution */
+    "moduleResolution": "bundler",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+
+    /* Strict Type Checking */
+    "strict": true,
+
+    /* Imports & Syntax */
+    "isolatedModules": true,
+    "esModuleInterop": true,
+
+    "skipLibCheck": true,
+
+    /* Output control */
+    "noEmit": true,
+
+    "composite": true
+  },
+  "include": ["src"]
+}

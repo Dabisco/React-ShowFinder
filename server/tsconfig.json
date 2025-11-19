@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    /* File structure */
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "composite": true,
+
+    /* Target & module system for ESM */
+    "target": "ES2020",
+    "module": "NodeNext", // for modern Node with "type": "module"
+    "moduleResolution": "NodeNext", // ensures correct import resolution
+    "lib": ["ESNext"],
+    "types": ["node"],
+
+    /* Type safety */
+    "strict": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+
+    /* Module handling */
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": false,
+
+    /* Output control */
+    "sourceMap": true,
+    "declaration": true
+  },
+  "include": ["src"]
+}
