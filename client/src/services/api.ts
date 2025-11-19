@@ -1,4 +1,4 @@
-export const API_BASE_URL: string = "/api";
+export const API_BASE_URL: string = import.meta.env.VITE_API_BASE_URL;
 
 export const apiFetch = async <T>(
   endpoint: string,
