@@ -27,7 +27,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "http://localhost:3000",
+        target: "react-showfinder-production.up.railway.app",
         changeOrigin: true,
       },
     },
